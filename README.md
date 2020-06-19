@@ -18,7 +18,7 @@ Open your terminal and go to your Craft project:
 
 ``` shell
 cd /path/to/project
-composer require codemonauts/craft-reverserelations
+composer require codemonauts/craft-reverse-relations-field
 ./craft install/plugin reverserelations
 ```
 

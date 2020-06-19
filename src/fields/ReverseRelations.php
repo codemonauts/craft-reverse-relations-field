@@ -91,12 +91,12 @@ class ReverseRelations extends Entries
     {
         $settings = parent::getSettingsHtml();
 
-        $fieldSelectTemplate = Craft::$app->view->renderTemplate('reverserelations/_settings',[
+        $fieldSelectTemplate = Craft::$app->view->renderTemplate('reverserelations/_settings', [
             'fields' => $this->getFields(),
             'settings' => $this->getSettings(),
         ]);
 
-        return $settings.$fieldSelectTemplate;
+        return $settings . $fieldSelectTemplate;
     }
 
     /**
@@ -110,7 +110,7 @@ class ReverseRelations extends Entries
         /** @var Field $field */
         foreach (Craft::$app->fields->getAllFields(false) as $field) {
             if ($field instanceof Entries && !($field instanceof $this)) {
-                $fields[$field->uid] = $field->name;
+                $fields[$field->uid] = $field->name . ' (' . $field->handle . ')';
             }
         }
 

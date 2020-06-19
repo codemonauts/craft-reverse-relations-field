@@ -1,7 +1,7 @@
 {
   "name": "codemonauts/craft-reverse-relations-field",
   "description": "Craft CMS plugin to add a reverse relations field for entries.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "craft-plugin",
   "keywords": [
     "craft",
