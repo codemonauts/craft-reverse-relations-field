@@ -1,0 +1,10 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.selectField({
+    label: "Target Field"|t("reverserelations"),
+    instructions: "Set the target field of this relation."|t("reverserelations"),
+    id: 'targetFieldId',
+    name: 'targetFieldId',
+    options: fields,
+    value: settings.targetFieldId
+})}}

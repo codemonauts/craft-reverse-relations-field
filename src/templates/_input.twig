@@ -1,0 +1,5 @@
+{% for element in elements %}
+    <a href="{{ element.getCpEditUrl() }}" target="_blank">{{ element.title }}</a><br>
+{% else %}
+    {{ "No entries found."|t("reverserelations") }}
+{% endfor %}

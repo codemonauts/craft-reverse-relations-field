@@ -1,0 +1,46 @@
+{
+  "name": "codemonauts/craft-reverse-relations-field",
+  "description": "Craft CMS plugin to add a reverse relations field for entries.",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "relations"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "codemonauts",
+      "homepage": "https://codemonauts.com"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/codemonauts/craft-reverse-relations-field",
+    "docs": "https://github.com/codemonauts/craft-reverse-relations-field/blob/master/README.md",
+    "issues": "https://github.com/codemonauts/craft-reverse-relations-field/issues"
+  },
+  "require": {
+    "craftcms/cms": "^3.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "codemonauts\\reverserelations\\": "src/"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.1"
+    }
+  },
+  "extra": {
+    "handle": "reverserelations",
+    "class": "codemonauts\\reverserelations\\ReverseRelations",
+    "name": "Reverse Relations Field",
+    "description": "Field to get reverse relations of entries.",
+    "hasCpSection": false,
+    "hasSettings": false
+  }
+}
